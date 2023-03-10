@@ -1,0 +1,139 @@
+header {
+  top: 0;
+  background: #fff7f1;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.08);
+}
+
+.main-page {
+  margin-top: 4em;
+  background-color: #efefef;
+}
+
+.main-page .container {
+  padding: 2em 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.main-page h1 {
+  font-size: clamp(1.83rem, calc(3.14vw + 1.1rem), 2.96rem);
+  display: block;
+}
+
+.main-page h2 {
+  font-size: 1.5rem;
+}
+.main-page p {
+  font-size: 1.2rem;
+}
+
+.main-page h1 {
+  position: relative;
+}
+
+.main-page h1::before {
+  content: "";
+  position: absolute;
+  border-radius: 55px;
+  transform: rotate(-90deg);
+  width: 3rem;
+  height: 0.5rem;
+  background: var(--primary-color);
+  display: block;
+  top: 0.6em;
+  left: -1.4em;
+}
+.main-page h1,
+.main-page h2,
+.main-page p {
+  animation: article-load 200ms ease-in 200ms;
+  animation-fill-mode: forwards;
+  transform: translateY(-20px);
+  opacity: 0;
+}
+figure {
+  float: right;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  margin-right: 2rem;
+  margin-top: 0;
+}
+
+.founder {
+  pointer-events: none;
+  width: 100%;
+  height: auto;
+}
+
+figcaption {
+  margin: 0 auto;
+  margin-top: 1.5em;
+}
+footer {
+  padding-inline: 3em;
+}
+@keyframes article-load {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@media only screen and (min-width: 635px) {
+  .main-page .container {
+    display: block;
+  }
+  figure {
+    margin-left: 2rem;
+  }
+}
+@media only screen and (min-width: 950px) {
+  .main-page .container {
+    padding: 5em 10em;
+  }
+
+  footer {
+    padding-inline: 5em;
+  }
+
+  .main-page h1 {
+    font-size: 3rem;
+    position: relative;
+
+  }
+
+  .main-page h1::before {
+    content: "";
+    position: absolute;
+    border-radius: 55px;
+    transform: rotate(-90deg);
+    width: 80px;
+    height: 10px;
+    background: var(--primary-color);
+    display: block;
+    top: 0.6em;
+    left: -1.4em;
+  }
+  .main-page h2 {
+    font-size: 2.25em;
+  }
+
+  .main-page p {
+    font-size: 1.75rem;
+
+  }
+}
+
+.left-col::after {
+  content: "❤︎";
+}
+
+.home {
+  display: inherit;
+}
