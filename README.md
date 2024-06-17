@@ -39,6 +39,8 @@ To run this project locally, follow these steps:
 3. Open the HTML file in your web browser:
 - Open index.html in your web browser to view the website.
 
+You can also view the live version of this website [here]([url](https://smart-mark.github.io/nonprofit-site/index.html)).
+
 ## Acknowledgements
 - Inspired by the need to support minority communities in rural Upper Egypt.
 - Developed by smart-mark
