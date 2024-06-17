@@ -353,6 +353,10 @@ button:hover .button-text {
   margin-bottom: -0.5em;
 }
 
+.splash-text {
+  display: none;
+}
+// SERVICES
 .services {
   padding: 0;
   margin: 0;
@@ -1070,7 +1074,8 @@ header {
             column-gap: 3rem;
     row-gap: 2rem;
     padding: 6em 4em;
-        grid-template-areas: "button1  button2" "button3 button4";
+        grid-template-areas: "button1  button2"
+ "button3 button4";
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 1fr 1fr;
@@ -1314,6 +1319,21 @@ header {
   }
   button.learn-more .circle {
     height: 100%;
+  }
+}
+@media (min-width: 1420px) {
+  .splash-text {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-55%);
+      font-weight: 400;
+      font-size: 14em;
+      color: rgba(0, 0, 0, 0.5);
+      padding: 10px 20px;
+      border-radius: 5px;
+  
   }
 }
 /*# sourceMappingURL=main.css.map */
