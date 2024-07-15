@@ -43,4 +43,4 @@ You can also view the live version of this website [here](https://smart-mark.git
 
 ## Acknowledgements
 - Inspired by the need to support minority communities in rural Upper Egypt.
-- Developed by smart-mark
+- Developed by markydevs
